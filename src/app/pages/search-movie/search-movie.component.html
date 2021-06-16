@@ -6,8 +6,8 @@
           <h1>FilmWeather</h1>
         </div>
 
-        <input type="text" class="form-control movie-search-input" [(ngModel)]="model" [ngbTypeahead]="search"
-               placeholder="Search..."/>
+        <input type="text" class="form-control movie-search-input" [(ngModel)]="model" [ngbTypeahead]="search" [resultFormatter]="resultFormatter"
+               placeholder="Search..." (selectItem)="navigateToMovie($event)"/>
       </div>
     </div>
   </div>

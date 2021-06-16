@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FilmWeather</a>
+  </div>
+</nav>
+
+<div class="container mt-4" *ngIf="movie">
+  <div class="row">
+    <div class="col">
+      <h2>{{movie.Title}}</h2>
+
+      <div class="d-flex flex-row">
+        <div>{{movie.Year}}</div>
+
+        <span class="mx-2">|</span>
+
+        <div>{{movie.Runtime}}</div>
+
+        <span class="mx-2">|</span>
+
+        <div>{{movie.Genre}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-4">
+      <img [src]="movie.Poster" class="img-fluid">
+    </div>
+
+    <div class="col shadow-sm">
+      <div class="mb-2">
+        {{movie.Plot}}
+      </div>
+
+      <div>
+        <div><span class="movie-detail-label">Language:</span> {{movie.Language}}</div>
+        <div><span class="movie-detail-label">Actors:</span> {{movie.Actors}}</div>
+        <div><span class="movie-detail-label">Director:</span> {{movie.Director}}</div>
+        <div><span class="movie-detail-label">Awards:</span> {{movie.Awards}}</div>
+        <div><span class="movie-detail-label">Production:</span> {{movie.Production}}</div>
+      </div>
+    </div>
+  </div>
+</div>

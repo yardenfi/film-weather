@@ -1,6 +1,8 @@
 import {IMovieRating} from "./movie-rating.interface";
+import {IMovieSearchOptions} from "./movie-search-options.interface";
+import {ISearchMovieDetails} from "./search-movie-details.interface";
 
-export interface IFullMovieDetails {
+export interface IFullMovieDetails extends ISearchMovieDetails {
   Rated: string;
   Released: string;
   Runtime: string

@@ -8,6 +8,7 @@ import {CommonModule} from "@angular/common";
 import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
 import {FormsModule} from "@angular/forms";
 import {NgbTypeaheadModule} from "@ng-bootstrap/ng-bootstrap";
+import { MoviePageComponent } from './pages/movie-page/movie-page.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import {NgbTypeaheadModule} from "@ng-bootstrap/ng-bootstrap";
   declarations: [
     AppComponent,
     SearchMovieComponent,
+    MoviePageComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
