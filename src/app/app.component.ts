@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MoviesService} from "./services/movies/movies.service";
+import {ISearchMovieDetails} from "./models/movie/search-movie-details.interface";
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,11 @@ import {MoviesService} from "./services/movies/movies.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public results: ISearchMovieDetails[] = [];
+
   constructor(private moviesService: MoviesService) {
-    this.moviesService.searchMovie({
+    this.moviesService.searchMovies({
       search: "are"
-    }).subscribe(console.log);
+    }).subscribe(r => this.results = r.Search);
   }
 }
