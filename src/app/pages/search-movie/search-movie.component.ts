@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {ISearchMovieDetails} from "../../models/movie/search-movie-details.interface";
 import {MoviesService} from "../../services/movies/movies.service";
 import {Observable, OperatorFunction} from "rxjs";
