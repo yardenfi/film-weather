@@ -1,0 +1,9 @@
+<ng-container *ngIf="weather">
+  <div class="d-flex align-items-center justify-content-end">
+    <i [ngClass]="weatherIcon" class="me-2 h2"></i>
+
+    <span class="h3">{{weather.main.temp}}°C</span>
+  </div>
+</ng-container>
+
+

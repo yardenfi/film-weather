@@ -1,3 +1,20 @@
 #ngb-live {
   display: none;
 }
+
+// Load the weather icons fonts
+@font-face {
+  font-family: 'weather';
+  src: url('assets/font/weathericons-regular-webfont.eot');
+  src: url('assets/font/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/weathericons-regular-webfont.woff') format('woff'),
+  url('assets/font/weathericons-regular-webfont.ttf') format('truetype'),
+  url('assets/font/weathericons-regular-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// use the weather icon library font
+.wi {
+  font-family: weather;
+}

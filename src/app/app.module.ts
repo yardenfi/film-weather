@@ -9,6 +9,8 @@ import { SearchMovieComponent } from './pages/search-movie/search-movie.componen
 import {FormsModule} from "@angular/forms";
 import {NgbTypeaheadModule} from "@ng-bootstrap/ng-bootstrap";
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
+import { WeatherPreviewComponent } from './pages/movie-page/weather-preview/weather-preview.component';
+import {WeatherService} from "./services/weather/weather.service";
 
 @NgModule({
   imports: [
@@ -23,8 +25,11 @@ import { MoviePageComponent } from './pages/movie-page/movie-page.component';
     AppComponent,
     SearchMovieComponent,
     MoviePageComponent,
+    WeatherPreviewComponent,
   ],
-  providers: [],
+  providers: [
+    WeatherService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

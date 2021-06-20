@@ -8,7 +8,7 @@
 </nav>
 
 <div class="container mt-4" *ngIf="movie">
-  <div class="row">
+  <div class="row d-flex justify-content-between">
     <div class="col">
       <h2>{{movie.Title}}</h2>
 
@@ -23,6 +23,10 @@
 
         <div>{{movie.Genre}}</div>
       </div>
+    </div>
+
+    <div class="col-2 d-flex justify-content-end align-items-center d-none d-md-block">
+      <app-weather-preview></app-weather-preview>
     </div>
   </div>
 

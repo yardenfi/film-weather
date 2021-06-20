@@ -17,7 +17,6 @@ export class MoviePageComponent implements OnInit {
     const movieId = this.route.snapshot.params["movieId"];
     this.moviesService.getMovie(movieId).subscribe(movie => {
       this.movie = movie;
-      console.log(this.movie)
     });
   }
 }
